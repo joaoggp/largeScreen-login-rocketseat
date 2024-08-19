@@ -13,7 +13,7 @@
   --background-input: #121214;
   --border-button: #29292e;
   --input-text-color: #ffffff;
-  --hover-color:#96969638;
+  --hover-color: #96969638;
 }
 
 body {
@@ -46,7 +46,9 @@ main .login-section input {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  color: var(--input-text-color);
   margin-bottom: 30px;
+  padding-left: 10px;
   height: 50px;
   background-color: var(--background-input);
   border: 1px solid var(--border-button);
@@ -105,7 +107,7 @@ main .login-section .login-button {
   color: var(--input-text-color);
 }
 
-main .login-section .login-button:hover{
+main .login-section .login-button:hover {
   background-color: var(--hover-color);
   background-color: var(--text-link-color);
   cursor: pointer;
@@ -134,7 +136,7 @@ main .login-section .login-button:hover{
   display: flex;
 }
 
-.alternative-login .github-button:hover{
+.alternative-login .github-button:hover {
   background-color: var(--hover-color);
   cursor: pointer;
 }
@@ -181,7 +183,7 @@ main .login-section .login-button:hover{
   align-items: center;
 }
 
-.create-account button:hover{
+.create-account button:hover {
   cursor: pointer;
   background-color: var(--hover-color);
 }
