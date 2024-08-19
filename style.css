@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Plus Jakarta Sans;
+}
+
+:root {
+  --text-color: rgb(196 196 204);
+  --background-color: #1a1a1e;
+  --text-link-color: #ac73f8;
+  --background-button: rgb(130 52 233);
+  --background-input: #121214;
+  --border-button: #29292e;
+  --input-text-color: #ffffff;
+  --hover-color:#96969638;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  margin: 28px;
+}
+
+main h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 64px 28px 38px;
+}
+
+main .login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+main .login-section input {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: 50px;
+  background-color: var(--background-input);
+  border: 1px solid var(--border-button);
+  border-radius: 5px;
+}
+
+main .login-section input:focus {
+  outline: none;
+  color: var(--input-text-color);
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+main .login-section label {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 160%;
+  width: 100%;
+  text-align: left;
+  color: var(--text-color);
+}
+
+#pass-input {
+  margin-bottom: 10px;
+}
+
+main .login-section a {
+  width: 100%;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+main .login-section a:link {
+  text-decoration: none;
+  color: var(--text-link-color);
+}
+
+main .login-section a:visited {
+  text-decoration: none;
+  color: var(--text-link-color);
+}
+
+main .login-section .login-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: none;
+  font-size: 1rem;
+  line-height: normal;
+  background-color: var(--background-button);
+  font-weight: 700;
+  color: var(--input-text-color);
+}
+
+main .login-section .login-button:hover{
+  background-color: var(--hover-color);
+  background-color: var(--text-link-color);
+  cursor: pointer;
+}
+
+.alternative-login {
+  margin-top: 55px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.alternative-login .github-button {
+  width: 100%;
+  height: 2.8rem;
+  font-weight: 600;
+  color: var(--input-text-color);
+  background-color: var(--border-button);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.alternative-login .github-button:hover{
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.alternative-login ion-icon {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.alternative-login span {
+  text-align: left;
+  margin-right: 5px;
+  width: 15%;
+  color: var(--text-color);
+}
+
+.alternative-login::after {
+  position: absolute;
+  content: "";
+  border: 1px solid var(--border-button);
+  width: 100%;
+  margin-top: 12rem;
+}
+
+.create-account {
+  margin-top: 6rem;
+  width: 100%;
+  position: relative;
+}
+
+.create-account button {
+  width: 100%;
+  height: 5rem;
+  text-align: left;
+  padding-left: 4rem;
+  color: var(--input-text-color);
+  background-color: var(--border-button);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.create-account button:hover{
+  cursor: pointer;
+  background-color: var(--hover-color);
+}
+
+.create-account span {
+  color: var(--text-link-color);
+}
+
+.create-account ion-icon {
+  width: 25px;
+  left: 20px;
+  position: absolute;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-link-color);
+}
+
+/* Tamanhos para telas maiores (acima de 1024px) */
+@media (min-width: 1024px) {
+  main h3 {
+    font-size: 2rem;
+  }
+
+  main .login-section input {
+    height: 60px;
+  }
+
+  main .login-section .login-button {
+    height: 60px;
+    font-size: 1.125rem;
+  }
+
+  .alternative-login .github-button {
+    height: 3rem;
+    font-size: 1.125rem;
+  }
+
+  .create-account button {
+    height: 5.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+/* Tamanhos para telas médias (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  main h3 {
+    font-size: 1.75rem;
+  }
+
+  main .login-section input {
+    height: 55px;
+  }
+
+  main .login-section .login-button {
+    height: 55px;
+    font-size: 1.0625rem;
+  }
+
+  .alternative-login .github-button {
+    height: 2.9rem;
+    font-size: 1.0625rem;
+  }
+
+  .create-account button {
+    height: 5.2rem;
+    font-size: 1.0625rem;
+  }
+}
+
+/* Tamanhos para telas pequenas (até 767px) */
+@media (max-width: 767px) {
+  main h3 {
+    font-size: 1.5rem;
+  }
+
+  main .login-section input {
+    height: 50px;
+  }
+
+  main .login-section .login-button {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .alternative-login .github-button {
+    height: 2.8rem;
+    font-size: 1rem;
+  }
+
+  .create-account button {
+    height: 5rem;
+    font-size: 1rem;
+  }
+}

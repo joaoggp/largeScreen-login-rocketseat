@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocketSeat Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="assets/rocketseat-logo.svg" alt="RocketSeat" class="logo" />
+    </header>
+    <main>
+      <h3>Acesse sua conta</h3>
+      <section class="login-section">
+        <label for="email-input">E-mail</label>
+        <input type="email" name="email-input" id="email-input" />
+        <label for="pass-input">Senha</label>
+        <input type="password" name="pass-input" id="pass-input" />
+        <a href="#">Esqueci minha senha</a>
+        <button type="button" class="login-button">Entrar</button>
+        <section class="alternative-login">
+          <span>Ou se preferir</span>
+          <button type="button" class="github-button">
+            <ion-icon name="logo-github"></ion-icon>Entre com github
+          </button>
+        </section>
+        <section class="create-account">
+          <button>
+            <ion-icon name="rocket-outline"></ion-icon>
+            Não tem uma conta? <br />
+            <span>Se inscreva gratuitamente</span>
+          </button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
